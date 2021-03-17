@@ -14,27 +14,11 @@
   <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="css/style.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,700&display=swap" rel="stylesheet">
 
 
-
-  <!-- Facebook Pixel Code Vegaz 2021 RPC 3 -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '774283899867907');
-  fbq('track', 'PageView');
-</script>
-<noscript>
-  <img height="1" width="1" style="display:none"
-       src="https://www.facebook.com/tr?id=774283899867907&ev=PageView&noscript=1"/>
-</noscript>
-<!-- End Facebook Pixel Code -->
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166134824-1"></script>
@@ -49,9 +33,12 @@
 
   <style media="screen">
 
+  .checked{
+    color: #ffb303;
+  }
+
   .fa-star{
-    color: #ee9e13;
-    font-size: 14px;
+    font-size:14px;
   }
 
   .product-rating{
@@ -64,8 +51,10 @@
 }
 
  .product-title{
-  font-weight: 400;
-}
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  color:black;
+ }
 
  .oferta{
    color: #02b502;
@@ -165,26 +154,36 @@ a:visited {
   color:white !important;
 }
 
+.product-description{  
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+    .lead{
+  font-family: 'Montserrat', sans-serif !important;
+    }
+
   </style>
 </head>
 
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" style="background:#1b1b1b !important;">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" style="background:#007fff !important;">
     <div class="container">
 
       <!-- Brand -->
       <a class="navbar-brand waves-effect"  target="_blank">
         <!-- <strong class="blue-text">VEGAZ</strong> -->
-        <img src="https://ecommvegaz.com.br/assets/vegaz.svg" alt="">
+        <img src="img/vegaz.svg" alt="">
       </a>
 
       <!-- Collapse -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+    <a href="#" class="cart-toggle mobileNavBar-link">
+      <i class="fas fa-shopping-cart ml-1" style="color:white !important;"></i><span class="icon icon-cart"></span>
+    </a>
       </button>
-
       <!-- Links -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
@@ -243,37 +242,45 @@ a:visited {
 
   <!-- Navbar Bottom  -->
 
-  <div class=" navbar justify-content-center fixed-bottom bottomMenu" style="background: #fff; padding:0; display:none;">
-        <div class="container row fix_cart_inner" style="margin-bottom: 10px;">
+  <div class=" navbar justify-content-center fixed-bottom bottomMenu" style="background: rgb(38, 54, 68); padding: 0px;  display:none;">
+        <div class="container row fix_cart_inner" style="margin-bottom: 10px;font-family: Montserrat, sans-serif;font-weight: 500;font-style: normal;line-height: 1.6;">
 
-          <div class="sticky-product media col-6">
+          <div class="sticky-product media col-md-6 col-lg-4">
             <div class="media-left">
-
+<img style="border-radius: 4px;width:40px;height:40px;margin-top: 15px;" src="//cdn.shopify.com/s/files/1/0522/8678/3685/products/Screenshot_1_500x_4989683b-fdfb-4978-954b-a4797acaf105.png?v=1615181965">
             </div>
-            <div class="media-body">
-              <h4 class="media-heading" style="
+            <div class="media-body" style="
+">
+
+
+    <h4 class="media-heading" style="
     font-size: 15px;
-    color: #414141;
+    color: white;
     font-weight: 700;
     padding-top: 10px;
     margin-bottom:0;
-">Gel Reparador de Couro</h4>
+">ANTENA HDTV 4K</h4>
 <p class="cart-price" style="
     font-weight: 400;
     color: #434343;
     white-space: nowrap;
-    font-size: 14px;
+    font-size: 15px;
     margin-bottom:0;
-"> <span id="proprice"><span class="money">R$ 97,00</span></span> <span id="propricecompare"><span class="money" style="
-    color: #2c9240;
+    margin-top: 6px;
+    "> <span id="propricecompare"><span class="money" style="
+    color: #bbbbbb;
     text-decoration: line-through;
-">R$ 194,00</span></span> </p>
+    ">R$ 197,00  BRL</span></span><span id="proprice"><span class="money" style="
+    color: white;
+    margin-left: 15px;
+">R$ 127,00 BRL
+</span></span>  </p>
             </div>
-          </div><div class="fix_add_button col-6">
+          </div><div class="fix_add_button col-md-6 col-lg-4">
 
-            <button onclick="document.getElementById('buy-here').scrollIntoView({
+            <button ontouchstart="document.getElementById('buy-here').scrollIntoView({behavior: 'smooth'});" onclick="document.getElementById('buy-here').scrollIntoView({
   behavior: 'smooth'
-});" style="padding: 0.84rem 0.20rem;font-weight: bold;max-width: 300px;width: 100%;padding: 11px 0px;" class="ymp_mainBtn ymp_elem_0 btn btn-success AddToCart sticky_addtocart ymp_mainBtn ymp_elem_0 waves-effect waves-light">COMPRAR AGORA</button>
+});" style="/* padding: 0.84rem 0.20rem; */font-weight: 400;max-width: 340px;width: 100%;padding: 5px 0px;color: white !important;background-color: #259030 !important;font-size: 21px;" class="ymp_mainBtn ymp_elem_0 btn btn-success AddToCart sticky_addtocart ymp_mainBtn ymp_elem_0 waves-effect waves-light">COMPRAR AGORA</button>
 
           </div>
 
@@ -284,16 +291,16 @@ a:visited {
 
 
   <!--Main layout-->
-  <main class="mt-5 pt-4">
+  <<main class="mt-5 pt-4">
     <div class="container dark-grey-text mt-5">
 
       <!--Grid row-->
-      <div class="row wow fadeIn">
+      <div class="row wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
 
         <!--Grid column-->
         <div class="col-md-6 mb-4">
 
-          <img src="img/product.webp" class="img-fluid" alt="">
+          <img src="https://cdn.shopify.com/s/files/1/0522/8678/3685/products/Screenshot_1_500x_4989683b-fdfb-4978-954b-a4797acaf105_1512x.png?v=1615181965" class="img-fluid" alt="">
 
         </div>
         <!--Grid column-->
@@ -316,79 +323,69 @@ a:visited {
               </a>
             </div> -->
 
-            <span class="oferta" style="font-weight: 300;">Frete grátis</span>
 
             <h1 class="product-title" style="
             font-family: inherit;
             FONT-WEIGHT: 600;
             font-size: 24px;
-            ">Gel Reparador de Couro</h1>
-
-            <p class="lead" id="buy-here">
-              <span class="mr-1">
-                <del>R$ <del id="price-black-old">R$ 195</del>,00</del>
-              </span>
-              <strong><span>R$ <span id="price-black-promo">97</span>,00</span></strong>
-              <br>
-              <strong>
-                ou por apenas 12x de R$ 9,74
-              </strong><br>
-            </p>
-
-
-            <p>
-              <span style="color:#02b502;">Compra Garantida.</span>&nbsp;receba o produto que está esperando ou devolvemos o dinheiro.
-            </p>
-
-
-            <p>
-              <span style="color:#02b502;"><i class="fa fa-lg fa-history"></i>
- Devolução grátis.</span>&nbsp;Você tem 7 dias a partir da data de recebimento.
-            </p>
-
+            ">ANTENA HDTV 4K</h1>
 
             <div class="product-rating">
 
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star checked"></i>
 
-              <p class="rating">43 avaliações</p>
+              <p class="rating">41 avaliações</p>
             </div>
 
+            <p class="lead" id="buy-here" style="margin-bottom: 0px;">
+            <strong style="font-weight: 800; color:black;"><span>R$ <span id="price-black-promo">127</span><sup>00</sup></span></strong><span class="mr-1">
+                <del>R$ <del id="price-black-old">194</del><sup>00</sup></del>
+              </span>
+              
+              <br>
+              </p><p class="mb-4">
+              ou por apenas 12x de <span style="color: #259030; font-weight: 500;">R$ 9,74</span>
+            </p>
 
-<div class="tab">
-  <button class="tablinks btn btn-dark active" aria-pressed="true"  onclick="selectColor(event, 'black')">Preto</button>
-  <button class="tablinks btn btn-outline-dark " aria-pressed="true"  onclick="selectColor(event, 'white')">Branco</button>
-</div>
-
-<div id="black" class="tabcontent">
-  <br>
-  <p>Comprar Reparador Preto</p>
+            
 
 
- <form class=" justify-content-left">
+            <span style="font-size: 18px;"><i class="fa fa-plane" style="transform: rotate(
+314deg
+); font-size: 14px;" aria-hidden="true"></i><b style="color: #259030; font-weight:600;"> Frete Grátis</b> para todo <b style="color: #259030;">Brasil</b></span>
+<p style="font-size: 12px; font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prazo de entrega de <b>7 à 30 dias úteis</b></p>
+
+<p style="
+    margin-bottom: 0px;
+">
+              <span style="color:#259030;"><i class="fa fa-check-circle"></i>
+Produto a pronta entrega!</span></p>
+
+
+            <p>
+              <span style="color:#259030;"><i class="fa fa-history"></i>
+  7 dias para trocas e devoluções.</span>
+            </p>
+
+
+<form class=" justify-content-left">
               <!-- Default input -->
 
               <div style="display:flex;" class="counter">
               <div class="col-lg-12">
                 <div class="input-group counter-input">
                   <span class="input-group-btn">
-                    <button type="button"
-                      class="quantity-left-minus btn btn-counter btn-number black-minus"
-                      data-type="minus" data-field="">
+                    <button type="button" class="quantity-left-minus btn btn-counter btn-number black-minus waves-effect waves-light" data-type="minus" data-field="">
                       <i class="fa fa-minus"></i>
                     </button>
                   </span>
-                  <input disabled type="text" id="quantity-black" name="quantity"
-                    autocomplete="off" class="form-control input-number text-align-center"
-                    value="1" min="1" max="10" style="margin-top:9px !important; max-width:5em; text-align:center;">
+                  <input disabled="" type="text" id="quantity-black" name="quantity" autocomplete="off" class="form-control input-number text-align-center" value="1" min="1" max="10" style="margin-top:9px !important; max-width:5em; text-align:center;">
                   <span class="input-group-btn">
-                    <button type="button"
-                      class="quantity-right-plus btn btn-counter btn-number black-plus"
-                      data-type="plus" data-field="">
+                    <button type="button" class="quantity-right-plus btn btn-counter btn-number black-plus waves-effect waves-light" data-type="plus" data-field="">
                       <i class="fa fa-plus"></i>
                     </button>
                   </span>
@@ -397,8 +394,8 @@ a:visited {
 
             </div>
 
-            <div class="text-center" style="display:grid;" width:100>
-              <a id="buy-black" href="#" class="btn btn-primary btn-lg text-center" type="submit" style="background:#3bb54a !important; -webkit-appearance: none; border-radius: 0;">Comprar
+            <div class="text-center" style="display:grid;" width:100="">
+              <a id="buy-black" href="https://seguro.vegaz.com.br/checkout/3059366876/12" class="btn btn-primary btn-lg text-center waves-effect waves-light" type="submit" style="background:#3bb54a !important; -webkit-appearance: none; border-radius: 0;">Comprar
                 <i class="fas fa-shopping-cart ml-1"></i>
               </a>
             </div>
@@ -408,63 +405,6 @@ a:visited {
               <!-- <input type="number" value="1" aria-label="Search" class="form-control" style="width: 100px"> -->
 
             </form>
-
-
-
-
-</div>
-
-<div id="white" class="tabcontent">
-  <br>
-  <p>Comprar Reparador Branco</p>
-
-
-
- <form class=" justify-content-left">
-              <!-- Default input -->
-
-              <div style="display:flex;" class="counter">
-              <div class="col-lg-12">
-                <div class="input-group counter-input">
-                  <span class="input-group-btn">
-                    <button type="button"
-                      class="quantity-left-minus btn btn-counter btn-number white-minus"
-                      data-type="minus" data-field="">
-                      <i class="fa fa-minus"></i>
-                    </button>
-                  </span>
-                  <input disabled type="text" id="quantity-white" name="quantity"
-                    autocomplete="off" class="form-control input-number text-align-center"
-                    value="1" min="1" max="10" style="margin-top:9px !important; max-width:5em; text-align:center;">
-                  <span class="input-group-btn">
-                    <button type="button"
-                      class="quantity-right-plus btn btn-counter btn-number white-plus"
-                      data-type="plus" data-field="">
-                      <i class="fa fa-plus"></i>
-                    </button>
-                  </span>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="text-center" style="display:grid;" width:100>
-              <a id="buy-white" href="#" class="btn btn-primary btn-lg text-center" type="submit" style="background:#3bb54a !important; -webkit-appearance: none; border-radius: 0;">Comprar
-                <i class="fas fa-shopping-cart ml-1"></i>
-              </a>
-            </div>
-
-
-
-              <!-- <input type="number" value="1" aria-label="Search" class="form-control" style="width: 100px"> -->
-
-            </form>
-
-
-
-</div>
-
-
 
          </div>
           <!--Content-->
@@ -478,7 +418,7 @@ a:visited {
       <hr>
 
       <!--Grid row-->
-      <div class="row d-flex justify-content-center wow fadeIn">
+      <div class="row d-flex justify-content-center wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
 
         <!--Grid column-->
         <!-- <div class="col-md-6 text-center">
@@ -497,9 +437,9 @@ a:visited {
 
       <div width="100%" style="text-align: center;">
 
-        <span id='sel1' onclick="show('sel1','resultsel1');" class=" btn btn-outline-primary">Descrição</span>
+        <span id="sel1" onclick="show('sel1','resultsel1');" class=" btn btn-outline-primary waves-effect waves-light">Descrição</span>
 
-        <span id='sel2' onclick="show('sel2','resultsel2');" class=" btn btn-outline-info">Avaliações</span>
+        <span id="sel2" onclick="show('sel2','resultsel2');" class=" btn btn-outline-info waves-effect waves-light">Avaliações</span>
 
         <!-- <span id='sel3' onclick="show('sel3','resultsel3');" class="m-4">div2</span> -->
 
@@ -510,87 +450,124 @@ a:visited {
 
 
               <!--Grid row-->
-              <div class="grid__item large--one-whole"><h3><strong></strong></h3>
-<div style="text-align: center;"></div>
-<div style="text-align: center;"><strong><img src="https://ecommvegaz.com.br/assets/reparador/first.jpg" class="img-fluid" alt="some_text" data-mce-selected="1"></strong></div>
-<div style="text-align: center;"><strong>&nbsp;</strong></div>
-<div style="text-align: center;">
-<strong>Recupere&nbsp;seus pertences com o Gel Reparador de Couro</strong><br>
+                <div class="product-description rte text-center mt-5" itemprop="description">
+   <h2 style="text-align: center; font-weight:700; font-size:14px;" data-mce-fragment="1" data-mce-style="text-align: center;"><span data-mce-fragment="1"><strong data-mce-fragment="1" style="
+    color: black;
+">📺&nbsp;TV SEM MENSALIDADES!&nbsp;📺</strong></span></h2>
+   <span style="font-weight:700 font-size:14px !important;"><span data-mce-fragment="1"><strong data-mce-fragment="1"><em data-mce-fragment="1" style="
+    color: black;
+">SEM MENSALIDADES:</em></strong><em data-mce-fragment="1">&nbsp;</em><em data-mce-fragment="1">E</em><em data-mce-fragment="1" style="
+    color: black;
+">m qualquer país do mundo</em><em data-mce-fragment="1" style="
+    color: black;
+">, nunca mais pague taxas caras de cabo ou satélite!&nbsp;A Antena HDTV pode trazer todas as notícias locais, previsão do tempo, programas infantis totalmente GRÁTIS.</em></span></span>
+   <span data-mce-fragment="1"><em data-mce-fragment="1"><img alt="" src="https://cdn.shopify.com/s/files/1/0512/5203/5764/files/product-image-1513826586_500x_500x_bfe42293-50b4-4d6f-8163-ff3b5ca91417_2048x2048.png?v=1609949579" data-mce-fragment="1" class="img-fluid" data-mce-src="https://cdn.shopify.com/s/files/1/0512/5203/5764/files/product-image-1513826586_500x_500x_bfe42293-50b4-4d6f-8163-ff3b5ca91417_2048x2048.png?v=1609949579"></em></span>
+   <br><span><span data-mce-fragment="1"><em data-mce-fragment="1"><strong data-mce-fragment="1" style="
+    color: black;
+">Canais digitais totalmente GRÁTIS!</strong></em></span></span><br>
+   <span data-mce-fragment="1">
+     <span data-mce-fragment="1" style="
+    color: black;
+"><em data-mce-fragment="1"><strong data-mce-fragment="1"></strong></em>Obtenha acesso às suas notícias locais, sitcoms, conteúdo educacional, etc. e evite pagar caro por cabo ou satélite.&nbsp;Desfrute de transmissões over-the-air de alta qualidade.&nbsp;A antena HDTV ultrafina e discreta tem um alcance de 120 milhas e pode ser colocada em qualquer lugar da sua casa e a antena procura constantemente por novos canais.</span><br><span data-mce-fragment="1"><img class="mt-5 mb-4 img-fluid" src="https://cdn.shopify.com/s/files/1/0399/5851/1782/files/3b7d07b8-bb17-4f07-9b24-cd3c16508ad8_480x480.jpg?v=1606444751" alt="" data-mce-fragment="1" data-mce-src="https://cdn.shopify.com/s/files/1/0399/5851/1782/files/3b7d07b8-bb17-4f07-9b24-cd3c16508ad8_480x480.jpg?v=1606444751"></span>
+   </span>
+   <br>
+   <span data-mce-fragment="1"><span class="a-list-item" data-mce-fragment="1"><strong data-mce-fragment="1"><span data-mce-fragment="1" style="
+    color: black;
+">Porquê a&nbsp;ANTENA HDTV™ 4K é diferente das demais?</span></strong><br><br></span></span>
+   <span data-mce-fragment="1" style="
+    color: black;
+">Ela conta com um<span data-mce-fragment="1">&nbsp;</span><strong data-mce-fragment="1">incrível amplificador de sinal com CHIP 6<span data-mce-fragment="1">&nbsp;</span></strong>embutido.&nbsp;<span data-mce-fragment="1">Seu objetivo é amplificar o&nbsp;</span>sinal&nbsp;da&nbsp;TV<span data-mce-fragment="1">&nbsp;que a antena da televisão já está recebendo, estabilizando-o e fazendo com que as falhas de sinal da TV sejam solucionadas.</span><br><span data-mce-fragment="1"><img alt="" src="https://cdn.shopify.com/s/files/1/0506/4130/5773/files/WhatsApp_Image_2020-12-09_at_15.16.45_480x480.jpg?v=1607537836" data-mce-fragment="1" data-mce-src="https://cdn.shopify.com/s/files/1/0506/4130/5773/files/WhatsApp_Image_2020-12-09_at_15.16.45_480x480.jpg?v=1607537836" class="img-fluid mb-4 mt-4"></span></span>
+   <span data-mce-fragment="1" style="
+">
+
+<br>
+<span class="a-list-item" data-mce-fragment="1"><strong data-mce-fragment="1"><span data-mce-fragment="1" style="
+    color: black;
+">Como funciona?</span></strong></span></span>
+   <ul data-mce-fragment="1" style="
+    text-align: initial;
+    margin-top: 10px;
+">
+      <li data-mce-fragment="1" style="
+    margin-bottom: 10px;
+">
+         <span><span class="a-list-item" data-mce-fragment="1"><strong data-mce-fragment="1"><span data-mce-fragment="1">Não precisa de internet,</span></strong><span data-mce-fragment="1" style="
+    color: black;
+">&nbsp;você só precisa conectar a antena HDTV à sua TV, e procurar o canal (a procura de canais pode durar cerca de 1 hora).&nbsp;Funciona na nova smart tv e na velha TV também!&nbsp;</span></span></span>
+      </li>
+      <li data-mce-fragment="1" style="
+    margin-bottom: 10px;
+    color: black;
+">
+         <span><span data-mce-fragment="1"><span class="a-list-item" data-mce-fragment="1">Locais, sitcoms, conteúdo educacional, canais abertos etc.</span></span></span>
+      </li>
+      <li data-mce-fragment="1" style="text-align: center;">
+        <span><span class="a-list-item" data-mce-fragment="1"><strong data-mce-fragment="1"><span data-mce-fragment="1" style="
+    color: black;
+">Evite pagar caro por satélite.&nbsp;Canais grátis para toda a vida!</span></strong></span></span><br>
+         <strong data-mce-fragment="1"><span data-mce-fragment="1"><img src="https://cdn.shopify.com/s/files/1/0399/5851/1782/files/02_480x480.jpg?v=1606443721" alt="" data-mce-fragment="1" data-mce-src="https://cdn.shopify.com/s/files/1/0399/5851/1782/files/02_480x480.jpg?v=1606443721" class="img-fluid"></span></strong>
+      </li>
+   </ul>
+   <span style="text-align: center;" data-mce-fragment="1" data-mce-style="text-align: center;"><span class="a-list-item" data-mce-fragment="1"><strong data-mce-fragment="1"><span data-mce-fragment="1" style="
+    color: black;
+">Detalhes:</span></strong><br data-mce-fragment="1"></span></span>
+        <span><span data-mce-fragment="1" style="
+    color: black;
+">Receba a maioria dos&nbsp;<strong data-mce-fragment="1" style="
+    color: black;
+">canais digitais e gratuitos</strong></span></span>
+         <span><span data-mce-fragment="1" style="
+    color: black;
+">FRETE GRÁTIS em todo o BRASIL</span></span>
+         <span><span data-mce-fragment="1" style="
+    color: black;
+">Podemos enviar para qualquer lugar</span></span><br>
+           <img alt="" src="https://cdn.shopify.com/s/files/1/0399/5851/1782/files/03_480x480.png?v=1606444137" data-mce-fragment="1" class="img-fluid mt-4 mb-4" data-mce-src="https://cdn.shopify.com/s/files/1/0399/5851/1782/files/03_480x480.png?v=1606444137">
+   <span data-mce-fragment="1" style="
+    margin-bottom: 10px;
+    "><br><span data-mce-fragment="1"><strong data-mce-fragment="1" style="
+    /* margin-bottom: 10px; */
+    color: black;
+">Mais informações:</strong></span></span>
+   <ul data-mce-fragment="1" style="
+    text-align: initial;
+    margin-top: 10px;
+">
+      <li data-mce-fragment="1" style="margin-bottom: 10px;color: black;">
+         <span><span data-mce-fragment="1"><strong data-mce-fragment="1">Design fino de alto desempenho</strong>&nbsp;- Fino, macio e leve para que você possa escondê-lo atrás da TV, estendê-lo sobre a mesa ou colá-lo no alto de uma janela.</span></span>
+      </li>
+      <li data-mce-fragment="1" style="
+    margin-bottom: 10px;
+">
+         <span><span data-mce-fragment="1" style="
+    color: black;
+"><strong data-mce-fragment="1">Cabo longo</strong>&nbsp;- o cabo coaxial longo facilita o posicionamento da antena no melhor ponto de recepção da sua casa.&nbsp;A antena pode ser alimentada por uma tomada ou porta USB de uma TV.</span></span>
+      </li>
+      <li data-mce-fragment="1">
+         <span><span data-mce-fragment="1" style="
+    color: black;
+"><strong data-mce-fragment="1">Compatível</strong>&nbsp;- com HDTV de vários rádios digitais terrestres (DVB-T, ISDB-T, DMB-T / H, ATSC) e DAB /&nbsp;</span></span>
+         
+      </li>
+   </ul>
+   <img src="https://media.giphy.com/media/HAxO6bXZD0NR0rBacV/giphy.gif" data-mce-fragment="1" class="img-fluid mt-4 mb-4" data-mce-src="https://media.giphy.com/media/HAxO6bXZD0NR0rBacV/giphy.gif"><ul data-mce-fragment="1"></ul>
 </div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><strong><br></strong></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><strong data-mce-fragment="1"><img src="img/description/1.gif" class="img-fluid" alt=""></strong></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><strong data-mce-fragment="1">&nbsp;</strong></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><strong data-mce-fragment="1"></strong></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"> <strong>O&nbsp;Restaurador de Couro&nbsp;</strong>ajudará você a restaurar seus objetos de couro, sejam eles, sintéticos ou não.&nbsp;<strong>Repara:</strong>&nbsp;arranhões, rasgos, rachaduras e queimaduras fazendo seu couro ficar novo.</span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><br></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;">
-<meta charset="utf-8"> <img src="img/description/2.gif" class="img-fluid" data-mce-src="img/description/2.gif">
+            
+
+<div class="text-left">
+
+  <h5 style="font-weight:500;">O que vem no pacote:</h5>
+  <ul>
+    <li>1 ANTENA HDTV™ 4K</li>
+    <li>1 Manual de usuário</li>
+  </ul>
+
 </div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><strong><br></strong></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><strong>TENHA SEU COURO NOVINHO</strong></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><strong><br></strong></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><strong></strong></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #404040;" data-mce-style="color: #404040;">Conserte todo tipo de material de couro, sintético ou não. Restaure bancos, poltronas de automóveis, cadeiras, bolsas, sapatos e muito mais.&nbsp;</span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;">&nbsp;</span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><meta charset="utf-8"> <img style="color: #404040; font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 1.4em;" alt="" src="img/description/3.gif" class="img-fluid" data-mce-src="https://cdn.shopify.com/s/files/1/0112/0531/2575/files/GIF-03_480x480.gif?v=1600301042" data-mce-style="color: #404040; font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 1.4em;"></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;">
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><br></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;">O&nbsp;<strong></strong><strong>Gel&nbsp;Restaurador</strong><b>&nbsp;de Couro&nbsp;</b><strong></strong>se encaixa&nbsp;em&nbsp;<strong>qualquer&nbsp;tipo e cor de couro</strong>.&nbsp;O gel&nbsp;traz&nbsp;<strong>tons</strong>&nbsp;mais&nbsp;<strong>atraentes, belos e limpos</strong>.&nbsp;Após secar, você não saberá mais onde estava o problema.&nbsp;</span></div>
-<span style="color: #000000;" data-mce-style="color: #000000;"> <span style="font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 1.4em;" data-mce-style="font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 1.4em;"> </span><br> </span>
-</div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><strong data-mce-fragment="1"></strong></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><strong>REPARO SUPER FÁCIL E RÁPIDO</strong></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><strong><br></strong></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><strong></strong></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;">
-<span style="color: #000000;" data-mce-style="color: #000000;">Restaura eficientemente qualquer tipo de arranhão, rasgo, queimaduras etc.&nbsp;</span><br>
-</div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><br></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;">
-<span style="color: #000000; font-size: 1.4em;" data-mce-style="color: #000000; font-size: 1.4em;"><img style="color: #000000; font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 1.4em;" src="img/description/4.png" class="img-fluid" alt="" data-mce-style="color: #000000; font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 1.4em;" data-mce-src="https://cdn.shopify.com/s/files/1/0112/0531/2575/files/03_480x480.png?v=1600301248"></span><br>
-</div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><strong><br></strong></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><strong>CORREÇÃO ABSOLUTA</strong></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><strong><br></strong></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><strong></strong></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><strong></strong></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;">Traz o melhor acabamento para bancos, sapatos, sofás, cadeiras, cintos, bolsas e muito mais.</span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;">&nbsp;</span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;">
-<meta charset="utf-8"> <img src="img/description/5.png" class="img-fluid" alt="" data-mce-fragment="1" data-mce-src="img/description/5.png"><br><meta charset="utf-8">
-</div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><strong></strong></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><br></div>
-<div style="text-align: center;" data-mce-style="text-align: center;">
-<strong>REPARO TOTAL</strong><br>
-</div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><strong><br></strong></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;">Diga adeus aos&nbsp;remendos, tintas, colas, tinturas, fita adesivas, massas desnecessárias e outros materiais que deixavam um aspecto sujo e feio no seu material.</span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;">&nbsp;</span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><img alt="" src="img/description/6.png" class="img-fluid"></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><strong><br></strong></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><strong>RESULTADOS PROFISSIONAIS</strong></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><strong><br></strong></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;">Em estragos antigos ou atuais:&nbsp;seja em couro, faux, couro sintético,&nbsp;bicast&nbsp;ou premium.</span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><br></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><meta charset="utf-8"> <img src="img/description/7.jpg" class="img-fluid"></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><strong><b><br></b></strong></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><strong><b>COMO USAR:</b></strong></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><strong><b><br></b></strong></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><strong><b></b></strong></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"> <meta charset="utf-8"> </span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;">- Limpe&nbsp;o local estragado e aplique o gel&nbsp;restaurador&nbsp;de maneira uniforme;</span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;">- Use um secador de cabelo ou deixe secar naturalmente;</span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;">- Pronto. Seu produto já está Novo.&nbsp;</span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><br></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><meta charset="utf-8"> <img src="img/description/8.png" class="img-fluid"></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"><br></span></div>
-<div style="text-align: center;" data-mce-style="text-align: center;"><span style="color: #000000;" data-mce-style="color: #000000;"></span></div></div>
-              <!--Grid row-->
+
+
+
+
+<!--Grid row-->
 
 
 
@@ -615,7 +592,7 @@ a:visited {
   					<div class="single-review">
   						<h4>Daniel Rocha</h4>
   						<p>
-  						  Produto conforme descrito. Ele nao poderia ser melhor
+                Muito bom! aqui já está pegando tudo certo
               </p>
   						<div class="star">
   							<span class="fa fa-star checked"></span>
@@ -647,8 +624,8 @@ a:visited {
   					<div class="single-review">
   						<h4>Cauã Marcos</h4>
   						<p>
-                Recomendo demais, isso resolve os problemas e não precisamos gastar fortunas que nem é normalmente pra consetar!
-  						</p>
+  						  Ótimo produto realmente surpreende.
+              </p>
   						<div class="star">
   							<span class="fa fa-star checked"></span>
   							<span class="fa fa-star checked"></span>
@@ -664,7 +641,7 @@ a:visited {
   					<div class="single-review">
   						<h4>Mauricio Seixas</h4>
   						<p>
-  						  Meus queridos amigos, e top demais.
+                Veio muito rápido. E é muito fácil de instalar
               </p>
   						<div class="star">
   							<span class="fa fa-star checked"></span>
@@ -679,7 +656,7 @@ a:visited {
   					<div class="single-review">
   						<h4>Tiago Braile</h4>
   						<p>
-  						  Perfeito, obrigado Vegaz
+  						  Perfeito, obrigado
               </p>
   						<div class="star">
   							<span class="fa fa-star checked"></span>
@@ -695,9 +672,9 @@ a:visited {
 
   				<div class="col-lg-4 col-md-6">
   					<div class="single-review">
-  						<h4>Cadu Amaral</h4>
+  						<h4>Richard Amaral</h4>
   						<p>
-  						  Bom produto, vou comprar outro novamente.
+                entrega rápida e antena boa
               </p>
   						<div class="star">
   							<span class="fa fa-star checked"></span>
@@ -714,7 +691,7 @@ a:visited {
   					<div class="single-review">
   						<h4>Rafael Martins</h4>
   						<p>
-  						  top, funciona mesmo, uns garotos pilantras rasgaram o banco do meu carro e eu tava desesperado, resolveram obrigado
+                Produto muito bom e de qualidade, vem com bastante canais.
               </p>
   						<div class="star">
   							<span class="fa fa-star checked"></span>
@@ -750,7 +727,7 @@ a:visited {
   					<div class="single-review">
   						<h4>Fernanda Malentaqui</h4>
   						<p>
-  						   Recomendo para todos que tem carro, a gente nunca ta livre desses rasgados, agora sempre to com o gel em casa, quem precisa eu empresto
+                Muito obrigada a toda a equipe pela ajuda e todo o suporte, o produto chegou muito bem
               </p>
   						<div class="star">
   							<span class="fa fa-star checked"></span>
@@ -770,7 +747,7 @@ a:visited {
   					<div class="single-review">
   						<h4>Josemar Goveia</h4>
   						<p>
-  						  top demais ganhei meu dia com esse resultado, carro 0 rasgados graças a Deus
+                Excelente produto, meu marido se adorou quando chegou em casa hoje.
               </p>
   						<div class="star">
   							<span class="fa fa-star checked"></span>
@@ -788,7 +765,7 @@ a:visited {
   					<div class="single-review">
   						<h4>Everiton Nevony</h4>
   						<p>
-  						  Ótimo produto, funcionou perfeitamente no meu carro
+                Aqui no interior de São Paulo pegou muito bem, ótimo produto.
               </p>
   						<div class="star">
   							<span class="fa fa-star checked"></span>
@@ -823,7 +800,7 @@ a:visited {
   					<div class="single-review">
   						<h4>Vanessa Correia</h4>
   						<p>
-  						  Realmente foi um achado, banco ta lisinho agora!
+  						  Realmente foi um achado!
               </p>
   						<div class="star">
   							<span class="fa fa-star checked"></span>
@@ -841,7 +818,7 @@ a:visited {
   					<div class="single-review">
   						<h4>Fabio Capra</h4>
   						<p>
-                é muito bom, remove todos os rasgados no meu couro, o carro está bonito novamente, os rasgados desvalorizam muito
+                Comprei duas, e ambas pegaram super bem. Agradeço pela paciência da loja.
               </p>
   						<div class="star">
   							<span class="fa fa-star checked"></span>
@@ -860,7 +837,7 @@ a:visited {
   					<div class="single-review">
   						<h4>Andreia Fonseca</h4>
   						<p>
-  						  Curti muito o produto.
+  						  Curti muito essa tv.
   						</p>
   						<div class="star">
   							<span class="fa fa-star checked"></span>
@@ -890,7 +867,7 @@ a:visited {
   				</div>
   				<div class="col-lg-4 col-md-6">
   					<div class="single-review">
-  						<h4>Tiago Braile</h4>
+  						<h4>Tiago Ortiz</h4>
   						<p>
               </p>
   						<div class="star">
@@ -928,7 +905,7 @@ a:visited {
   					<div class="single-review">
   						<h4>Tatiane Fogaça</h4>
   						<p>
-  					    Ajudou demais, tava muito preocupada pq n tinha dinheiro pra pagar pelo conserto, o gel resolveu!
+  					    Demais!
               </p>
   						<div class="star">
   							<span class="fa fa-star checked"></span>
@@ -946,7 +923,6 @@ a:visited {
   					<div class="single-review">
   						<h4>Luis Vinicius</h4>
   						<p>
-  						  Funciona em vários tipos de carro, gostei bastante, fica a dica
               </p>
   						<div class="star">
   							<span class="fa fa-star checked"></span>
@@ -968,7 +944,7 @@ a:visited {
               <div class="single-review">
                 <h4>Laís Isabela</h4>
                 <p>
-                  Ótimo produto, recomendo bastante dxa o carro brilhante tira os rasgados
+                  Ótimo produto, recomendo bastante
                 </p>
                 <div class="star">
                   <span class="fa fa-star checked"></span>
@@ -985,7 +961,7 @@ a:visited {
               <div class="single-review">
                 <h4>Jasmin Oliveira</h4>
                 <p>
-                  Muito importante ter isso, não vale a pena pagar conserto por causa de rasgados n banco  ou mancha, esse produto resolve
+                  Muito importante ter isso, não vale a pena pagar mensalidade da net
                 </p>
                 <div class="star">
                   <span class="fa fa-star checked"></span>
@@ -1000,7 +976,7 @@ a:visited {
               <div class="single-review">
                 <h4>Nicole Giovana</h4>
                 <p>
-                  Recomendei pra todos meus amigos que tem carro, isso é maravilhoso
+                  Recomendei pra todos minhas amigas, ótima invensão
                 </p>
                 <div class="star">
                   <span class="fa fa-star checked"></span>
@@ -1031,7 +1007,7 @@ a:visited {
               <div class="single-review">
                 <h4>Maitê Esther</h4>
                 <p>
-                  Passei nos couros do meu carro, que tinham muitos, e saiu todos. Recomendo
+                 
                 </p>
                 <div class="star">
                   <span class="fa fa-star checked"></span>
@@ -1051,7 +1027,7 @@ a:visited {
               <div class="single-review">
                 <h4>Patrícia Giovanna</h4>
                 <p>
-                  Bem pratico de usar e tira todos rasgados do couro, bom demais
+                  Bem pratico de usar e pega todos os canais
                 </p>
                 <div class="star">
                   <span class="fa fa-star checked"></span>
@@ -1086,7 +1062,7 @@ a:visited {
               <div class="single-review">
                 <h4>Pietro Henry</h4>
                 <p>
-                  Resultado incrível, sumiram os rasgados do couro do meu carro, muito bom!
+                  Tudo certo por enquanto.
                 </p>
                 <div class="star">
                   <span class="fa fa-star checked"></span>
@@ -1104,14 +1080,13 @@ a:visited {
               <div class="single-review">
                 <h4>Marcelo Severino</h4>
                 <p>
-                  Carro novinho, valeu mesmo
                 </p>
                 <div class="star">
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
                 </div>
 
 
@@ -1124,7 +1099,7 @@ a:visited {
               <div class="single-review">
                 <h4>Renan Marcos</h4>
                 <p>
-                  Recomendo, barato e resolve o problema dos couros e manchas
+                  Recomendo, barato e resolve o problema
                 </p>
                 <div class="star">
                   <span class="fa fa-star checked"></span>
@@ -1157,7 +1132,7 @@ a:visited {
               <div class="single-review">
                 <h4>Joaquim Carlos</h4>
                 <p>
-                  Adorei o efeito, tava irado porque meu filho rasgou o banco do meu carro, que bom que consegui resolver de forma barata
+                  Funciona
                 </p>
                 <div class="star">
                   <span class="fa fa-star checked"></span>
@@ -1175,7 +1150,7 @@ a:visited {
               <div class="single-review">
                 <h4>Giovana Stefany</h4>
                 <p>
-                  Mto bom...
+                  bom
                 </p>
                 <div class="star">
                   <span class="fa fa-star checked"></span>
@@ -1193,7 +1168,7 @@ a:visited {
               <div class="single-review">
                 <h4>Allana Isabelly</h4>
                 <p>
-                 bom conseguir ajustar o carro sem pagar caro, estou muito satisfeito
+                 Imagem incrivel
                 </p>
                 <div class="star">
                   <span class="fa fa-star checked"></span>
@@ -1212,7 +1187,7 @@ a:visited {
               <div class="single-review">
                 <h4>Luiza Larissa</h4>
                 <p>
-                  Meu banco estava cheio de rasgado de um dia que deixei muito tempo em uma rua vazia e saíram todos os rasgados, amei
+                  Bom produto corresponde com o que foi proposto
                 </p>
                 <div class="star">
                   <span class="fa fa-star checked"></span>
@@ -1232,7 +1207,7 @@ a:visited {
               <div class="single-review">
                 <h4>Yasmin Luana</h4>
                 <p>
-                  Estava assustada com o preço que o mecânico cobrou pra consertar, graças a Deus achei vocês e consegui comprar esse produto, abraço
+                  Estava assustada com o preço da assinatura dos canais, graças a Deus achei vocês e consegui comprar esse produto, abraço
                 </p>
                 <div class="star">
                   <span class="fa fa-star checked"></span>
@@ -1254,8 +1229,8 @@ a:visited {
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
                 </div>
               </div>
             </div>
@@ -1265,7 +1240,6 @@ a:visited {
               <div class="single-review">
                 <h4>Leandro Murilo</h4>
                 <p>
-                  Produto muito bom, acho que sempre vale a pena ter em casa pq dependendo da região n tem o que fazer sempre carro tem o banco rasgado. Meu carro foi pelos próprios alunos
                 </p>
                 <div class="star">
                   <span class="fa fa-star checked"></span>
@@ -1283,7 +1257,7 @@ a:visited {
               <div class="single-review">
                 <h4>Gabriela Alícia</h4>
                 <p>
-                  Indiquei para os meus amigos o produto ajuda demais, funcionou no meu carro e moto nos bancos
+                  ajuda demais
                 </p>
                 <div class="star">
                   <span class="fa fa-star checked"></span>
@@ -1300,7 +1274,7 @@ a:visited {
               <div class="single-review">
                 <h4>Clarice Daiane</h4>
                 <p>
-                  Resolvi o problema do carro obrigada
+                  Resolvi obrigada!
                 </p>
                 <div class="star">
                   <span class="fa fa-star checked"></span>
@@ -1319,7 +1293,6 @@ a:visited {
               <div class="single-review">
                 <h4>Sandra Sophie</h4>
                 <p>
-                  Muito bom resolveu meu carro tava cheio de rasgados no couro
                 </p>
                 <div class="star">
                   <span class="fa fa-star checked"></span>
@@ -1361,7 +1334,6 @@ a:visited {
 
     </div>
   </main>
-  <!--Main layout-->
 
   <!--Footer-->
   <!-- <footer class="page-footer text-center font-small mt-4 wow fadeIn">
@@ -1387,7 +1359,7 @@ a:visited {
 
 
   <footer class="footer-area section-gap">
-		<div class="container style="margin-bottom:25px;">
+		<div class="container" style="margin-bottom:99px;">
 			<div class="row">
 				<div class="col-lg-3 col-md-6 col-sm-6">
 					<div class="single-footer-widget">
@@ -1571,8 +1543,8 @@ const whiteUrlArray = [
     ];
 
 
-    const baseValueOld = 194;
-    const baseValuePromo = 97;
+    const baseValueOld = 197;
+    const baseValuePromo = 127;
 
     const origin = getOrigin();
 
@@ -1719,13 +1691,41 @@ function selectColor(evt, colorSelector) {
     <script>
     $(document).scroll(function() {
   var y = $(this).scrollTop();
-  if (y > 1500) {
+  if (y > 1000) {
     $('.bottomMenu').fadeIn();
   } else {
     $('.bottomMenu').fadeOut();
   }
 });
     </script>
+
+    <script>
+    
+      function hasTouch() {
+  return 'ontouchstart' in document.documentElement
+         || navigator.maxTouchPoints > 0
+         || navigator.msMaxTouchPoints > 0;
+}
+
+if (hasTouch()) { // remove all the :hover stylesheets
+  try { // prevent exception on browsers not supporting DOM styleSheets properly
+    for (var si in document.styleSheets) {
+      var styleSheet = document.styleSheets[si];
+      if (!styleSheet.rules) continue;
+
+      for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+        if (!styleSheet.rules[ri].selectorText) continue;
+
+        if (styleSheet.rules[ri].selectorText.match(':hover')) {
+          styleSheet.deleteRule(ri);
+        }
+      }
+    }
+  } catch (ex) {}
+}
+  
+    </script>
+
 
 </body>
 
